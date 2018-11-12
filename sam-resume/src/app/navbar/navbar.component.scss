@@ -1,0 +1,33 @@
+.nav {
+	background: #2E2E2E;
+	height: 100%;
+
+	.navbar-brand {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+		padding-bottom: 16px;
+		font-size: 28px;
+	}
+
+	.nav-link {
+		color: white;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.navbar-image-container {
+		padding-top: 16px;
+
+		.navbar-image {
+			border-radius: 50%;
+			height: 125px;
+			width: 125px;
+	
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

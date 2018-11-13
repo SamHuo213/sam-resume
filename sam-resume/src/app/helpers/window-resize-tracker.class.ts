@@ -1,4 +1,4 @@
-import { HostListener } from "@angular/core";
+import { HostListener } from '@angular/core';
 
 export class WindowResizeTrackerClass {
 	width: number;

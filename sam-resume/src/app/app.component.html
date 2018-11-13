@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
  crossorigin="anonymous">
 
-<div class="app-container row">
-	<div class="col-lg-2 col-md-3 col-sm-4">
+<div class="app-container" [ngClass]="{ 'row no-gutters': width > smallScreen, '': smallScreen > width }">
+	<div [ngClass]="{ 'col-lg-2 col-md-3': width > smallScreen, 'small-screen-nav': smallScreen > width }">
 		<navbar></navbar>
 	</div>
-	<div class="col-lg-10 col-md-9 col-sm-8">
+	<div [ngClass]="{ 'col-lg-10 col-md-9': width > smallScreen, 'col-md-12': smallScreen > width }">
 		<resume></resume>
 	</div>
 </div>

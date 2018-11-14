@@ -9,4 +9,10 @@ import { SmallScreen } from '../constants/small-screen.constant';
 })
 export class NavbarComponent extends WindowResizeTrackerClass {
 	smallScreen = SmallScreen;
+	showMobileNavbar = false;
+
+	toggleShowMobileNavbar() {
+		console.log(this.showMobileNavbar);
+		this.showMobileNavbar = !this.showMobileNavbar;
+	}
 }

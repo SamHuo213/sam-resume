@@ -4,7 +4,7 @@ export class WindowResizeTrackerClass {
 	width: number;
 
 	constructor() {
-		this.width = window.screen.width;
+		this.width = window.innerWidth;
 	}
 
 	@HostListener('window:resize', ['$event'])

@@ -1,5 +1,5 @@
 <div *ngIf="width > smallScreen" class="lg-screen">
-	<ul class="nav flex-column">
+	<ul class="nav flex-column navbar-dark">
 		<div class="navbar-image-container">
 			<img class="navbar-image" src="assets/my-picture.jpg">
 		</div>
@@ -18,14 +18,36 @@
 		</li>
 	</ul>
 </div>
+
 <div *ngIf="smallScreen > width" class="sm-screen">
 	<div class="navbar navbar-expand-lg navbar-dark">
 		<a class="navbar-brand  sm-navbar-collapsed-container">
 			<img src="assets/my-picture.jpg" width="25" height="25" class="img-src d-inline-block align-top">
 			Sam Huo
 		</a>
-		<button class="navbar-toggler" type="button">
+		<button class="navbar-toggler" type="button" (click)="toggleShowMobileNavbar()">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
+		<div class="navbar-collapse collapse" [ngClass]="{ 'show': showMobileNavbar, '': !showMobileNavbar }">
+			<div class="navbar-image-container">
+				<img class="navbar-image" src="assets/my-picture.jpg">
+			</div>
+			<a align="center" class="navbar-brand">Sam Huo</a>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/workExperience">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/volunteerExperience">Volunteer Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/skills">Skills</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>

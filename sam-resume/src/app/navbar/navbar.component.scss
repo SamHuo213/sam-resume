@@ -16,8 +16,8 @@
 	
 		.nav-link {
 			color: white;
-			padding-top: 16px;
-			padding-bottom: 16px;
+			padding-top: 8px;
+			padding-bottom: 8px;
 		}
 	
 		.navbar-image-container {
@@ -54,5 +54,34 @@
 		padding-top: 1px;
 		padding-bottom: 1px;
 		font-size: 14px;
+	}
+
+	.nav-link {
+		color: white;
+	}
+
+	.navbar-collapse {
+		.navbar-brand {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+			padding-bottom: 24px;
+			font-size: 28px;
+		}
+
+		.navbar-image-container {
+			padding-top: 16px;
+	
+			.navbar-image {
+				border-radius: 50%;
+				height: 125px;
+				width: 125px;
+		
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
 	}
 }

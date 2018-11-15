@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ResumeComponent } from './resume/resume.component';
+import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
@@ -16,7 +16,7 @@ import { SkillsComponent } from './skills/skills.component';
 @NgModule({
 	declarations: [
 		AppComponent,
-		ResumeComponent,
+		HeaderComponent,
 		NavbarComponent,
 		WorkExperienceComponent,
 		VolunteerExperienceComponent,

@@ -1,4 +1,4 @@
-.resume-container {
+.header-container {
 	width: 100%;
 	
 	.contact-info {
@@ -12,5 +12,9 @@
 	
 	.body-header-two {
 		text-decoration: underline
+	}
+
+	.header-divider {
+		border-top-width: 4px;
 	}
 }

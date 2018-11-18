@@ -1,6 +1,7 @@
 .header-container {
-	width: 100%;
-	
+	width: inherit;
+	height: inherit;
+
 	.contact-info {
 		font-size: 1em;
 	}
@@ -16,5 +17,9 @@
 
 	.header-divider {
 		border-top-width: 4px;
+	}
+
+	.header-link {
+		color: black;
 	}
 }

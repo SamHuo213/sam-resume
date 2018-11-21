@@ -12,7 +12,6 @@ export class NavbarComponent extends WindowResizeTrackerClass {
 	showMobileNavbar = false;
 
 	toggleShowMobileNavbar() {
-		console.log(this.showMobileNavbar);
 		this.showMobileNavbar = !this.showMobileNavbar;
 	}
 }

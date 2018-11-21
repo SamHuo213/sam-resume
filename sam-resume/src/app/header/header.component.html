@@ -1,4 +1,4 @@
-<div class="header-container">
+<div class="header-container" [ngClass]="{ 'large-screen-container': width > smallScreen, '': smallScreen > width }">
 	<div class="top-info-container">
 		<div align="center">
 			<h1 class="name">Sam Huo</h1>

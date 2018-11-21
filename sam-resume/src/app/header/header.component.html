@@ -1,15 +1,16 @@
-<div class="header-container">
-	<div align="center">
-		<h1 class="name">Sam Huo</h1>
-		<h2 class="contact-info">
-			Email: <a class="header-link" href="mailto: sam@samhuo.com">sam@samhuo.com</a>
-			<br>
-			LinkedIn: <a class="header-link" href="https://www.linkedin.com/in/sam-huo-23358233/">Sam Huo</a>
-			<br>
-			GitHub: <a class="header-link" href="https://github.com/SamHuo213">Sam Huo</a>
-		</h2>
+<div class="header-container" [ngClass]="{ 'large-screen-container': width > smallScreen, '': smallScreen > width }">
+	<div class="top-info-container">
+		<div align="center">
+			<h1 class="name">Sam Huo</h1>
+			<h2 class="contact-info">
+				Email: <a class="header-link" href="mailto: sam@samhuo.com">sam@samhuo.com</a>
+				<br>
+				LinkedIn: <a class="header-link" href="https://www.linkedin.com/in/sam-huo-23358233/">Sam Huo</a>
+				<br>
+				GitHub: <a class="header-link" href="https://github.com/SamHuo213">Sam Huo</a>
+			</h2>
+		</div>
 	</div>
-	<hr class="header-divider">
 
 	<body class="body">
 		<router-outlet></router-outlet>

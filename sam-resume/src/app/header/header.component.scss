@@ -1,25 +1,39 @@
 .header-container {
 	width: inherit;
-	height: inherit;
+	height: 100vh;
+
+	.top-info-container {
+		border-bottom: 1px solid black;
+		padding-bottom: 16px;
+		.header-link {
+			color: black;
+		}
+	}
 
 	.contact-info {
 		font-size: 1em;
 	}
 	
 	.body {
-		padding-left: 14px;
-		padding-right: 14px;
+		padding-top: 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+
+		overflow-y: scroll;
+		overflow-x: hidden; 
 	}
 	
 	.body-header-two {
 		text-decoration: underline
 	}
+}
 
-	.header-divider {
-		border-top-width: 4px;
+.large-screen-container {
+	.top-info-container {
+		height: 14%;
 	}
 
-	.header-link {
-		color: black;
+	.body {
+		height: 86%;
 	}
 }

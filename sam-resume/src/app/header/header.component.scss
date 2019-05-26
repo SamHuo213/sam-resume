@@ -2,11 +2,19 @@
 	width: inherit;
 	height: 100vh;
 
+	display: flex;
+	flex-flow: column;
+
 	.top-info-container {
 		border-bottom: 1px solid black;
 		padding-bottom: 16px;
 		.header-link {
 			color: black;
+		}
+
+		.download-link {
+			font-size: 12px;
+			cursor: pointer;
 		}
 	}
 
@@ -25,15 +33,5 @@
 	
 	.body-header-two {
 		text-decoration: underline
-	}
-}
-
-.large-screen-container {
-	.top-info-container {
-		height: 14%;
-	}
-
-	.body {
-		height: 86%;
 	}
 }
